@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios HTML, CSS, JS</title>
+    <link rel="stylesheet" id="estilo" href="estilos/estilosimple.css">
+</head>
+<body>
+    <nav>
+        <h1 class="titulo">
+            Resolucion Ejercicio
+        </h1>
+    </nav>
+    <div class="contenedor">
+        <section>
+            <div class="ejercicio1">
+                <h3>Formulario de Datos Personales</h3>
+                <div class="formulario">
+                    <form onsubmit="return noRefresh()">
+                        <label for="nombre">Nombre: </label>
+                        <input type="text" name="nombre" required placeholder="Escribe tu nombre">
+                        <br>
+                        <label for="apellido">Apellido: </label>
+                        <input type="text" name="apellido" required placeholder="Escribe tu apellido">
+                        <br>
+                        <label for="email">Email: </label>
+                        <input type="email" name="email" required placeholder="Escribe un Email valido">
+                        <br>
+                        <label for="fnacimiento">Fecha de Nacimiento: </label>
+                        <input type="date" name="fnacimiento" required >
+                        <br>
+                        <label for="pais">Pais de Residencia: </label>
+                        <input type="text" name="pais" required placeholder="Escribe tu pais">
+                        <br>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+                <button onclick="cambiarEstiloSimple()" id="botonEstiloSimple">Estilo Simple</button>
+                <button onclick="cambiarEstilo1()" id="botonEstilo1">Estilo 1</button>
+                <button onclick="cambiarEstiloAltoContraste()" id="botonEstiloAltoContraste">Estilo de Alto Contraste</button>
+            </div>
+        </section>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>

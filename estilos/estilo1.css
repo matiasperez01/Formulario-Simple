@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    background-color: #00a3e6;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-family: sans-serif;
+}
+
+.ejercicio1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px 0px;
+    padding: 20px;  
+    border: 1px solid #000;
+    width: 300px;
+    background-color: #89808043;
+}
+
+.formulario{
+    border-radius: 2px;
+    margin-bottom: 10px;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 10px;
+    background-color: #fff;
+
+}
+
+.titulo-ejercicio{
+    background-color: #00a3e6;
+    width: 300px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+input {
+    margin: 5px;
+    width: 90%; 
+}
+
+
+#botonEstiloSimple {
+    display: none;
+}
+
+
+button {
+    background-color: #00a3e6;
+    color: #fff;
+    width: 100%;
+}
+
+#botonEstiloSimple, #botonEstiloAltoContraste{
+    display: none;
+}

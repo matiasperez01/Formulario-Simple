@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.titulo {
+    background-color: #00a3e6;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-family: sans-serif;
+}
+
+.ejercicio1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px 0px;
+}
+
+.titulo-ejercicio{
+    background-color: #00a3e6;
+    width: 300px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+input {
+    margin: 5px;
+}
+
+#botonEstiloSimple {
+    display: none;
+}
