@@ -15,25 +15,52 @@ function cambiarEstiloSimple(){
 
 
 
-function validarCampos(){
-    const nombre = document.getElementById('nombre').value;
-    const apellido = document.getElementById('apellido').value;
-    const pais = document.getElementById('pais').value;
-    const email = document.getElementById('email').value;
+function validarCampos() {
+    const nombre = document.getElementById('nombre');
+    const apellido = document.getElementById('apellido');
+    const email = document.getElementById('email');
+    const fnacimiento = document.getElementById('fnacimiento');
+    const pais = document.getElementById('pais');
+    let ban = true;
 
-    if(nombre.length < 1 || nombre.length > 20 || apellido.length < 2 || apellido.length > 20 || pais === '' || email === ''){
-        alert("Por favor, complete todos los campos");
-    }else{
-        var formatoEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!formatoEmail.test(email)) {
-            alert('Por favor, ingrese un email válido.');
-        }else{
-            alert("Datos ingresados correctamente!");
-        }    
+    if (nombre.value.trim() === '') {
+        nombre.classList.add('is-invalid');
+        ban = false;
+    } else {
+        nombre.classList.remove('is-invalid');
     }
-    
-}
 
+    if (apellido.value.trim() === '') {
+        apellido.classList.add('is-invalid');
+        ban = false;
+    } else {
+        apellido.classList.remove('is-invalid');
+    }
+
+    if (email.value.trim() === '' || !email.value.includes('@')) {
+        email.classList.add('is-invalid');
+        ban = false;
+    } else {
+        email.classList.remove('is-invalid');
+    }
+
+    if (fnacimiento.value.trim() === '') {
+        fnacimiento.classList.add('is-invalid');
+        ban = false;
+    } else {
+        fnacimiento.classList.remove('is-invalid');
+    }
+
+    if (pais.value.trim() === '') {
+        pais.classList.add('is-invalid');
+        ban = false;
+    } else {
+        pais.classList.remove('is-invalid');
+    }
+
+
+    if(ban === true) alert("Datos registrados correctamente!");
+}
 
 
 function noRefresh(){
